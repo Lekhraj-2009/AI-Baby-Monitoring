@@ -1,0 +1,80 @@
+.body-background{
+    text-align: center;
+    background-image: url("https://st2.depositphotos.com/7263402/10044/i/950/depositphotos_100443352-stock-photo-light-blue-feathers-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#back{
+    float: right;
+    margin-top: none;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    font-size: 17px;
+    border-radius: 15px;
+    border: 2px solid white;
+    transition: transform 250ms ease-in-out;
+    width: 165px;
+}
+#back:active{
+    transform: scale(0.9);
+}
+#back:hover{
+    background-color: black;
+}
+.heading{
+    width: 480px;
+    margin-top: 115px;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    background-color: darkblue;
+}
+.pushable{
+    display: block;
+    font-family: 'Rye', cursive;
+    background: linear-gradient(rgb(28, 160, 241) 0%, blue 50%, rgb(28, 160, 241) 100%);
+    color: white;
+    font-size: 35px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 12px;
+    transform: translateY(-6px);
+}
+.heading:hover .pushable{
+    transform: translateY(-2px);
+}
+#status_btn{
+    width: 300px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-right: 3.5px;
+}
+#baby_found_btn{
+    width: 300px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 3.5px;
+}
+canvas{
+    border-radius: 15px;
+    border: 2px solid white;
+    margin-top: 65px;
+}
+.copyright-footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color: grey;
+    font-size: 25px;
+    font-family: 'Satisfy', cursive;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}

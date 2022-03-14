@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monitor Baby</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+        
+        <!--Imported Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <!--Imported Fonts-->
+        
+        <link rel="stylesheet" type="text/css" href="room.css">
+    </head>
+    <body class="body-background">
+        <center>
+            <button id="back" onclick="back()">BACK TO HOME</button>
+            <br>
+            <h1 class="heading">
+                <span class="pushable">
+                    BABY MONITORING
+                    <br>
+                    With CocoSSD
+                </span>
+            </h1>
+            <button class="btn btn-danger" id="status_btn">
+                <b>STATUS: </b><span id="status"></span>
+            </button>
+            <button class="btn btn-warning" id="baby_found_btn">
+                <b>RESULT: </b><span id="found"></span>
+            </button>
+            <br>
+        </center>
+        <div class="copyright-footer">Developed By: Lekhraj Jain, WhiteHat Jr</div>
+
+        <!--JS File Link-->
+        <script src="room.js"></script>
+    </body>
+</html>
