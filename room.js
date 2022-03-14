@@ -50,17 +50,18 @@ function draw(){
             noFill();
             stroke("#FF0000");
             rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
-        }
-        if (objects[i].label == "person"){
-            babyNotFound_Alert.stop();
+            
+            if (objects[i].label == "person"){
+                babyNotFound_Alert.stop();
 
-            document.getElementById("found").innerHTML = "Baby Found!";
-            babyFound_Alert.play();
-        } else {
-            babyFound_Alert.stop();
+                document.getElementById("found").innerHTML = "Baby Found!";
+                babyFound_Alert.play();
+            } else {
+                babyFound_Alert.stop();
 
-            document.getElementById("found").innerHTML = "Baby Not Found!";
-            babyNotFound_Alert.play();
+                document.getElementById("found").innerHTML = "Baby Not Found!";
+                babyNotFound_Alert.play();
+            }
         }
     }
 }
